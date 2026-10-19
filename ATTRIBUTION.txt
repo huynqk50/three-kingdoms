@@ -1,0 +1,5 @@
+Atlas reference: https://github.com/IMRZ/twtk-interactive-map
+Copyright (c) 2019-2020 IMRZ. MIT license: atlas-LICENSE.txt
+Map artwork credited to Creative Assembly / IMRZ; the MIT notice does not establish rights to all third-party artwork.
+Portrait artwork: Chan Mou, primarily from the official site. Public redistribution permission remains unresolved.
+Historical sources and individual artwork provenance are recorded in the source repository.

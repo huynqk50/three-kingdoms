@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f4ec" />
+    <meta name="description" content="Cẩm nang song ngữ về cuối Hán và Tam Quốc: dòng thời gian, địa lý, nhân vật và quan hệ, với giới hạn thông tin theo năm." />
+    <link rel="icon" type="image/svg+xml" href="/three-kingdoms/favicon.svg" />
+    <title>Tam Quốc — Cẩm nang đọc truyện</title>
+    <script type="module" crossorigin src="/three-kingdoms/assets/index-BdeAbvrh.js"></script>
+    <link rel="stylesheet" crossorigin href="/three-kingdoms/assets/index-D9PVs5xD.css">
+  </head>
+  <body>
+    <div id="app"><p>Đang tải cẩm nang… / Loading your companion…</p></div>
+    <noscript>Cẩm nang cần JavaScript để lọc giới hạn thông tin. / JavaScript is needed to apply your reading limit.</noscript>
+    <script>
+      window.addEventListener('error', event => {
+        if (!(event instanceof ErrorEvent) && !(event.target instanceof HTMLScriptElement)) return;
+        const en = document.documentElement.lang === 'en';
+        document.title = en ? 'Three Kingdoms' : 'Tam Quốc';
+        const message = document.createElement('p');
+        message.textContent = en ? 'The app could not load. Please reload the page.' : 'Không tải được cẩm nang. Hãy thử tải lại trang.';
+        const reload = document.createElement('button');
+        reload.textContent = en ? 'Reload' : 'Tải lại';
+        reload.addEventListener('click', () => location.reload());
+        document.querySelector('#app').replaceChildren(message, reload);
+      }, true);
+    </script>
+  </body>
+</html>
